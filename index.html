@@ -22,30 +22,34 @@
             font-weight: 600;
         }
         
-        .w3-card-2 {
+        .w3-card-4 {
             min-height: 460px;
         }
         
-        .w3-card-2 ul {
+        .w3-card-4 ul {
             padding: 0;
         }
         
-        .w3-card-2 li {
+        .w3-card-4 li {
             list-style: none;
         }
         
-        .w3-card-2 h3 i {
+        .w3-card-4 h3 i {
             margin-top: 30px;
         }
         
-        .w3-card-2 h3 .fa,
-        .w3-card-2 h3 .octicon {
+        .w3-card-4 h3 .fa,
+        .w3-card-4 h3 .octicon {
             font-size: 120px;
         }
         
         .no-decoration {
             text-decoration: none;
             font-style: normal;
+        }
+        
+        div.w3-container {
+            margin: 30px 0;
         }
     </style>
 </head>
@@ -63,12 +67,28 @@
         </div>
     </header>
 
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-third">
-            <a href="https://github.com/replicaJunction/PSJira" class="no-decoration">
-                <div class="w3-card-2 w3-padding-top">
+    <div class="white">
+        <div class="w3-container w3-theme">
+            <h3>Description</h3>
+        </div>
+        <div class="w3-container">
+
+            <p class="summary">PSJira is a Windows PowerShell module to interact with <a href="https://www.atlassian.com/software/jira">Atlassian JIRA</a> via a REST API, while maintaining a consistent PowerShell look and feel.</p>
+
+            <pre><code class="language-powershell "># Issues created by you in the last week
+Get-JiraIssue -Query "created >= -7d AND reporter = currentUser()"</code></pre>
+        </div>
+        <div class="w3-container w3-theme w3-large">
+            <p>Read more in the documentation: <a href="http://psjira.readthedocs.io/en/latest/getting_started.html">Getting Started</a>.</p>
+        </div>
+    </div>
+
+    <div class=" w3-row-padding w3-center w3-margin-top ">
+        <div class="w3-third ">
+            <a href="https://github.com/replicaJunction/PSJira " class="no-decoration ">
+                <div class="w3-card-4 w3-padding-top ">
                     <h3>GitHub project<br>
-                        <i class="octicon octicon-mark-github w3-margin-bottom w3-text-theme"></i>
+                        <i class="octicon octicon-mark-github w3-margin-bottom w3-text-theme "></i>
                     </h3>
 
                     <p>Help us make this module even better by collaborating, reporting problems or just stop by to tell us what you think.</p>
@@ -77,23 +97,23 @@
         </div>
 
         <div class="w3-third ">
-            <div class="w3-card-2 w3-padding-top">
-                <h3>Getting Started<br>
-                    <i class="octicon octicon-terminal w3-margin-bottom w3-text-theme"></i>
+            <div class="w3-card-4 w3-padding-top ">
+                <h3>Installing<br>
+                    <i class="octicon octicon-terminal w3-margin-bottom w3-text-theme "></i>
                 </h3>
 
                 <p>In the PowerShell console:
-                    <pre><code class="language-powershell">Install-Module PSJira</code></pre>
-                    <i class="w3-small">*This requires PowerShell v5 or the <code>PowerShellGet</code> module</i>
+                    <pre><code class="language-powershell ">Install-Module PSJira</code></pre>
+                    <i class="w3-small ">*This requires PowerShell v5 or the <code>PowerShellGet</code> module</i>
                 </p>
             </div>
         </div>
 
-        <div class="w3-third">
-            <a href="http://psjira.readthedocs.io/en/latest/" class="no-decoration">
-                <div class="w3-card-2 w3-padding-top">
+        <div class="w3-third ">
+            <a href="http://psjira.readthedocs.io/en/latest/ " class="no-decoration ">
+                <div class="w3-card-4 w3-padding-top ">
                     <h3>Documentation<br>
-                        <i class="fa fa-book w3-margin-bottom w3-text-theme"></i>
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme "></i>
                     </h3>
 
                     <ul>
@@ -110,10 +130,10 @@
     <!-- Footer -->
     <footer class="w3-container w3-theme-dark w3-padding-16 ">
         <p>PSJira &copy; 2017</p>
-        <p style="float: right">Theme powered by <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a></p>
+        <p style="float: right ">Theme powered by <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a></p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js "></script>
 </body>
 
 </html>
